@@ -21,7 +21,7 @@ class ReportController
     public function generate(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         $adminUserId = $request->getHeader('admin_user_id')[0];
-        $id_product = $request->getHeader('id')[0];
+        $id_product = $request->getHeader('id_product')[0];
         
         $data = [];
         $data[] = [
